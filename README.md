@@ -24,7 +24,7 @@ PolyCalc is a distributed calculator service implemented using gRPC and Protocol
 
 ## Project Structure
 ```bash
-PolyCalc/
+gRPC-multi-language(Java-Go-Python)/
 ├── java-client/               # Java Client Implementation
 │   ├── src/main/java/org/ds/
 │   │   └── gClient.java       # Client logic
