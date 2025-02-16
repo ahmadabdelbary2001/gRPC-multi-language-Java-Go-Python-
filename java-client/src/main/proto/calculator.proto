@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package calculator;
+
+option java_multiple_files = true;
+option java_package = "org.ds";
+
+service Calculator {
+  rpc AddNumbers (CalculationRequest) returns (stream CalculationResponse);
+  rpc MultiplyNumbers (CalculationRequest) returns (stream CalculationResponse);
+}
+
+message CalculationRequest {
+  int32 number1 = 1;
+  int32 number2 = 2;
+}
+
+message CalculationResponse {
+  int32 result = 1;
+}
